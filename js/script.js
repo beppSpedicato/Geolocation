@@ -17,7 +17,20 @@ function showPosition(position) {
 }
 
 function showError(error) {
-    console.log(error.code);
+    switch (error.code) {
+        case error.PERMISSION_DENIED:
+            alert("L' utente ha negato l' accesso alla posizione");
+            break;
+        case error.POSITION_UNAVAILABLE:
+            alert("Informazioni della posizione non disponibbili");
+            break;
+        case error.TIMEOUT:
+            alert("La rishiesta ci ha messo troppo tempo");
+            break;
+        case error.UNKNOWN_ERROR:
+            alert("E' avvenuto un errore sconosciuto");
+            break;
+    }
 }
 
 function getLocation() {
