@@ -1,4 +1,3 @@
 # Geolocation
 
-Hacktoberfest: Gabrielefra
-hacktoberFest beppSpedicato
+//TODO: Inserire dei contenuti nel README.md
